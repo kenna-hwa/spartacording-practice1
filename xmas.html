@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merry Christmas</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS26e1sJ5dHV4X5iJ0TQJFgtI_24u9YhVoHcg&usqp=CAU">
+    <meta property="og:image" content="https://www.sampleposts.com/wp-content/uploads/2020/05/merry-christmas-800x400.jpg">
+    <meta property="og:title" content="xmas 카드">
+    <meta property="og:description" content="Merry christmas">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&family=Sunflower:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0 auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            background-image: url(https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/Webp.net-gifmaker.gif);
+            background-size: cover;
+            background-position: center;
+            margin: 100px auto 0 auto;
+            border: 5px solid white;
+            border-radius: 100px;
+            box-shadow: 0px 0px 10px 0px white;
+            cursor: pointer;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .massage-box {
+            background-color: ivory;
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 760px) {
+            .massage-box {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0 auto;
+            }
+            .h1 {
+                font-size: 28px;
+            }
+            .letter-close {
+                margin: 150px auto 0 auto;
+            }
+        }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        };
+        function go_rtan() {
+            alert('앗, 어떻게 찾았지!');
+            window.location.href="https://spartacodingclub.kr?f_name=%ED%99%A9%EC%A3%BC%ED%99%94&f_uid=5fded93a78430a46266df0e2"
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">봉투를 열어봐!</h2>
+    </div>
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>Merry Christmas</h1>
+        <div class="massage-box">
+            크리스마스에는 축복을 *:ﾟ+｡.☆.+*✩⡱:ﾟ<br />
+            크리스마스에는 사랑을 *:ﾟ+｡.☆.+*✩⡱:ﾟ<br />
+            당신과 만나는 그날을 *:ﾟ+｡.☆.+*✩⡱:ﾟ <br />
+            기억할게요 *:ﾟ+｡.☆.+*✩⡱:ﾟ <br />
+            <br />
+            <p class="from">2020.12.25</p>
+        </div>
+    </div>
+</body>
+
+</html>
